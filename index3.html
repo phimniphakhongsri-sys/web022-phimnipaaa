@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านสวนคาเฟ่ - เมนูน้ำ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #fcfbf7;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 0.8rem 5%;
+        }
+
+        .nav-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            text-decoration: none;
+        }
+
+        .nav-menu-table {
+            border-collapse: collapse;
+            margin-left: auto;
+        }
+
+        .nav-menu-table td {
+            padding: 0 1rem;
+        }
+
+        .nav-menu-table a {
+            color: #333;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-menu-table a:hover,
+        .nav-menu-table a.active {
+            color: #2d5a27;
+        }
+
+        .menu-container {
+            padding: 7rem 5% 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: #2d5a27;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            color: #666;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .menu-list-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .menu-list-table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-list-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .img-td {
+            width: 130px;
+            padding: 1rem;
+        }
+
+        .menu-img-item {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .info-td {
+            padding: 1rem 1rem 1rem 0;
+            vertical-align: middle;
+        }
+
+        .info-td h3 {
+            font-size: 1.2rem;
+            color: #2d5a27;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-td p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .price-td {
+            width: 100px;
+            padding: 1rem;
+            text-align: right;
+            vertical-align: middle;
+            font-weight: bold;
+            color: #d4a373;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .nav-menu-table {
+                display: none;
+            }
+
+            .img-td {
+                width: 90px;
+                padding: 0.5rem;
+            }
+
+            .menu-img-item {
+                width: 70px;
+                height: 70px;
+            }
+
+            .price-td {
+                width: 70px;
+                padding: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <table class="nav-table">
+        <tr>
+            <td style="text-align:left;">
+                <a href="index.html" class="logo">บ้านสวนคาเฟ่</a>
+            </td>
+
+            <td style="text-align:right;">
+                <table class="nav-menu-table">
+                    <tr>
+                        <td><a href="index.html">หน้าแรก</a></td>
+                        <td><a href="index2.html">บรรยากาศ</a></td>
+                        <td><a href="index3.html" class="active">เมนูน้ำ</a></td>
+                        <td><a href="index4.html">เมนูของหวาน</a></td>
+                        <td><a href="index5.html">เมนูแนะนำ</a></td>
+                        <td><a href="index6.html">ติดต่อเรา</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<div class="menu-container">
+
+    <h2 class="section-title">
+        เครื่องดื่มดับร้อนสูตรพิเศษ
+    </h2>
+
+    <p class="section-subtitle">
+        คัดสรรวัตถุดิบคุณภาพดี ชงสดใหม่ทุกแก้ว
+    </p>
+
+    <table class="menu-list-table">
+
+        <tr>
+            <td class="img-td">
+                <img src="images/231.jpg"
+                     alt="อเมริกาโน่น้ำส้ม"
+                     class="menu-img-item">
+            </td>
+
+            <td class="info-td">
+                <h3>อเมริกาโน่น้ำส้มสด</h3>
+                <p>กาแฟเข้มข้นผสมน้ำส้มแท้ 100% ให้ความสดชื่นตื่นตัวตลอดวัน</p>
+            </td>
+
+            <td class="price-td">80 ฿</td>
+        </tr>
+
+        <tr>
+            <td class="img-td">
+                <img src="images/455.jpg"
+                     alt="โกโก้เข้มข้น"
+                     class="menu-img-item">
+            </td>
+
+            <td class="info-td">
+                <h3>โกโก้เย็นบ้านสวน</h3>
+                <p>โกโก้นำเข้าเข้มข้นพิเศษ หวานมันกลมกล่อมกำลังดี</p>
+            </td>
+
+            <td class="price-td">70 ฿</td>
+        </tr>
+
+        <tr>
+            <td class="img-td">
+                <img src="images/345.jpg"
+                     alt="น้ำอัญชันมะนาวโซดา"
+                     class="menu-img-item">
+            </td>
+
+            <td class="info-td">
+                <h3>อัญชันมะนาวโซดา</h3>
+                <p>น้ำอัญชันธรรมชาติผสมน้ำมะนาวคั้นสด เพิ่มความซ่าสดชื่นด้วยโซดา</p>
+            </td>
+
+            <td class="price-td">65 ฿</td>
+        </tr>
+
+        <tr>
+            <td class="img-td">
+                <img src="images/90.jpg"
+                     alt="สตรอว์เบอร์รีสมูทตี้"
+                     class="menu-img-item">
+            </td>
+
+            <td class="info-td">
+                <h3>สตรอว์เบอร์รีโยเกิร์ตสมูทตี้</h3>
+                <p>สตรอว์เบอร์รีปั่นคู่กับโยเกิร์ตรสธรรมชาติ หวานอมเปรี้ยวลงตัว</p>
+            </td>
+
+            <td class="price-td">85 ฿</td>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>

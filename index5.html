@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านสวนคาเฟ่ - เมนูน้ำและของหวาน</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #fcfbf7;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.97);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 0.8rem 5%;
+        }
+
+        .nav-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d5a27;
+            text-decoration: none;
+        }
+
+        .nav-menu-table {
+            border-collapse: collapse;
+            margin-left: auto;
+        }
+
+        .nav-menu-table td {
+            padding: 0 1rem;
+        }
+
+        .nav-menu-table a {
+            color: #333;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-menu-table a:hover {
+            color: #2d5a27;
+        }
+
+        /* Menu Section */
+        .menu-container {
+            padding: 7rem 5% 4rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: #2d5a27;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: #666;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            color: #1b3a18;
+            text-align: left;
+            padding: 1rem 0 0.5rem;
+            border-bottom: 2px solid #2d5a27;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+            margin-bottom: 2rem;
+        }
+
+        .menu-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            vertical-align: top;
+            width: 33.33%;
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .menu-info {
+            padding: 1.2rem;
+            text-align: left;
+        }
+
+        .menu-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            color: #2d5a27;
+        }
+
+        .menu-info p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.8rem;
+            line-height: 1.5;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d4a373;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                overflow-x: auto;
+            }
+
+            .nav-table {
+                min-width: 650px;
+            }
+
+            .nav-menu-table td {
+                padding: 0 0.5rem;
+            }
+
+            .menu-table,
+            .menu-table tr {
+                display: block;
+                width: 100%;
+            }
+
+            .menu-table {
+                border-spacing: 0;
+            }
+
+            .menu-card {
+                display: block;
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <table class="nav-table">
+            <tr>
+                <td style="text-align: left;">
+                    <a href="index.html" class="logo">
+                        บ้านสวนคาเฟ่
+                    </a>
+                </td>
+
+                <td style="text-align: right;">
+                    <table class="nav-menu-table">
+                        <tr>
+                            <td><a href="index.html">หน้าแรก</a></td>
+                            <td><a href="index2.html">บรรยากาศ</a></td>
+                            <td><a href="index3.html">เมนูน้ำ</a></td>
+                            <td><a href="index4.html">เมนูของหวาน</a></td>
+                            <td><a href="index5.html">เมนูแนะนำ</a></td>
+                            <td><a href="index6.html">ติดต่อเรา</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- Main Menu -->
+    <div class="menu-container">
+
+        <h2 class="section-title">
+            เมนูแนะนำประจำร้าน
+        </h2>
+
+        <p class="section-subtitle">
+            เติมความสดชื่นด้วยเครื่องดื่มและของหวานสูตรพิเศษเฉพาะบ้านสวนคาเฟ่
+        </p>
+
+        <!-- Drinks -->
+        <h3 class="category-title">
+            เมนูน้ำ (Drinks)
+        </h3>
+
+        <table class="menu-table">
+            <tr>
+
+                <td class="menu-card">
+                    <img src="images/265.png" alt="ลาเต้บ้านสวน" class="menu-img">
+                    <div class="menu-info">
+                        <h3>ลาเต้บ้านสวน</h3>
+                        <p>กาแฟอาราบิก้าเข้มข้น ผสมนมนุ่มละมุนและกลิ่นหอมเฉพาะตัว</p>
+                        <div class="price">75 ฿</div>
+                    </div>
+                </td>
+
+                <td class="menu-card">
+                    <img src="images/2332.png" alt="ชาไทยมะพร้าวอ่อน" class="menu-img">
+                    <div class="menu-info">
+                        <h3>ชาไทยมะพร้าวอ่อน</h3>
+                        <p>ชาไทยเข้มข้น ผสานความหอมหวานสดชื่นจากน้ำมะพร้าวแท้</p>
+                        <div class="price">85 ฿</div>
+                    </div>
+                </td>
+
+                <td class="menu-card">
+                    <img src="images/12333.png" alt="มัทฉะยูซุโซดา" class="menu-img">
+                    <div class="menu-info">
+                        <h3>มัทฉะยูซุโซดา</h3>
+                        <p>ชาเขียวมัทฉะพรีเมียม ตัดรสด้วยความเปรี้ยวซ่าของส้มยูซุ</p>
+                        <div class="price">90 ฿</div>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+
+        <!-- Desserts -->
+        <h3 class="category-title">
+            เมนูของหวาน (Desserts)
+        </h3>
+
+        <table class="menu-table">
+            <tr>
+
+                <td class="menu-card">
+                    <img src="images/256.png" alt="มัทฉะชีสเค้ก" class="menu-img">
+                    <div class="menu-info">
+                        <h3>มัทฉะชีสเค้ก</h3>
+                        <p>ชีสเค้กเนื้อนุ่ม ละมุนลิ้น ได้รสชาติชาเขียวมัทฉะแท้จากญี่ปุ่น</p>
+                        <div class="price">120 ฿</div>
+                    </div>
+                </td>
+
+                <td class="menu-card">
+                    <img src="images/12334.jpg" alt="บราวนี่โฮมเมด" class="menu-img">
+                    <div class="menu-info">
+                        <h3>บราวนี่ช็อกโกแลตหนึบ</h3>
+                        <p>บราวนี่ช็อกโกแลตเข้มข้น เสิร์ฟพร้อมไอศกรีมวานิลลา</p>
+                        <div class="price">95 ฿</div>
+                    </div>
+                </td>
+
+                <td class="menu-card">
+                    <img src="images/4433.jpg" alt="ครัวซองต์อัลมอนด์" class="menu-img">
+                    <div class="menu-info">
+                        <h3>ครัวซองต์อัลมอนด์</h3>
+                        <p>ครัวซองต์เนยสดฝรั่งเศส กรอบนอกนุ่มใน ท็อปด้วยอัลมอนด์สไลด์</p>
+                        <div class="price">85 ฿</div>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
